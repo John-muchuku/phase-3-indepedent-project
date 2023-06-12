@@ -1,10 +1,8 @@
-import React, { useContext, useState} from 'react'
+import React, { useContext, useState } from 'react'
 import { AuthContext } from '../context/AuthContext'
 import { Link } from 'react-router-dom'
-
-
-function Login() {
-
+export default function Login() 
+{
     const {login} = useContext(AuthContext)
     
     const [username, setUsername] = useState()
@@ -13,11 +11,10 @@ function Login() {
 
     const  handleSubmit = (e) =>{
         e.preventDefault()
-
-    
+    //    console.log(username)
+    //    console.log(password)
        login(username, password)
     }
-
 
 
 
@@ -59,4 +56,3 @@ function Login() {
   )
 }
 
-export default Login

@@ -49,6 +49,7 @@ export function AuthProvider({children})
 
         })
     }
+    
     // Logout
     const logout = () =>{
         fetch("/auth/logout", {
