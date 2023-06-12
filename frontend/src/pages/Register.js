@@ -3,7 +3,7 @@ import { AuthContext } from '../context/AuthContext'
 
 
 
-function Regester() {
+function Register() {
 
     const {register} = useContext(AuthContext)
     
@@ -64,4 +64,4 @@ function Regester() {
   )
 }
 
-export default Regester
+export default Register

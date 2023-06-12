@@ -49,7 +49,6 @@ export function AuthProvider({children})
 
         })
     }
-    
     // Logout
     const logout = () =>{
         fetch("/auth/logout", {
@@ -84,13 +83,11 @@ export function AuthProvider({children})
             if(response.currentUser)
                 {
                     set_currentUser(response.currentUser)
-                }     
+                }
+            
         })
     }, [onChange])
 
-
-
-    // Register
 
     const register = (username, email, password) =>{
         fetch("/users/adduser", {
@@ -129,7 +126,6 @@ export function AuthProvider({children})
 
         })
     }
-
 
 
 

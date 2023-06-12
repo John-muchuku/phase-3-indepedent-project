@@ -10,7 +10,7 @@ import Buysingle from './pages/Buysingle';
 import Add from './pages/Add';
 import { AuthProvider } from './context/AuthContext';
 import Profile from './pages/Profile';
-import Regester from './pages/Regester';
+import Register from './pages/Register';
 import { PostProvider } from './context/PostContext';
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
       <Route path = "/" element = {<Display/>}>
         <Route index element = {<Home/>}/>
         <Route path="login" element = {<Login/>}/>
-        <Route path="Regester" element = {<Regester/>}/>
+        <Route path="Register" element = {<Register/>}/>
         <Route path="Add" element = {<Add/>}/>
         <Route path="Profile" element = {<Profile/>}/>
         <Route  path="Buy" element = {<Buy/>}/>

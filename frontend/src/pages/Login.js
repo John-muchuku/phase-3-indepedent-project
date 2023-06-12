@@ -40,7 +40,7 @@ export default function Login()
   <button type="submit" class=" btn rounded-pill">Submit</button>
 
   <div className='form-text p-2'>Don't have an account? 
-    <Link to="/Regester"> Register</Link>
+    <Link to="/Register"> Register</Link>
   </div>
   
 </form>
