@@ -49,19 +49,22 @@ class UsersController < Sinatra::Base
 
     # Get current user
     get "/current_user" do
-       
-       
-       if user
-          {:currentUser => user}.to_json
-       else
-            message = {:error=> "Not logged in"}
-            message.to_json
-       end
+        user = User.find_by(id: session[:user_id])
       
-    end
-
-
-
+        if user
+      
+         {:currentUser => user}.to_json
+       else
+      
+          message = {:error=> "Not logged in"}
+          message.to_json()
+        end
+      
+      
+      
+      
+      end
+      
 
 
 
