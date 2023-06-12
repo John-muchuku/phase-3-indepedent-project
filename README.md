@@ -4,7 +4,7 @@
 
 Welcome to the Johmuch Homes website! This website is designed to help you find homes for sale in your desired location. Whether you're looking for a cozy apartment, a spacious house, or a luxurious villa, we've got you covered.
 
-frontend link http://localhost:3001/
+frontend link https://phase-3-indepedent-project.vercel.app/
 backend link https://project-pjwl.onrender.com/
 
 
