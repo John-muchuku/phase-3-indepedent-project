@@ -1,5 +1,7 @@
 class ApplicationController < Sinatra::Base
-
+    set :sessions, true
+    use Rack::Session::Cookie, expire_after: 3600
+    
     def authorize
         if session[:user_id].blank?
          puts "Authorize called"
